@@ -60,6 +60,7 @@
     position: relative !important;
     top: 0 !important;
     width: 176px;
+    margin-left: 0px;
   } /*ARREGLADO*/
   .link {
     position: static !important;
@@ -98,9 +99,19 @@
     border-top-width: 12px;
     border-bottom-width: 12px;
   }
+  .btn-save-blog .text-btn {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  /* .form-options-contenedor .btn-save-blog{
+    margin-right: 15px;
+    margin-left: 15px;
+  } */
 }
-@media screen and (max-width: 320px){
-    .banner_gallery .contplay .video-play-button {
-        left: 220px !important;
-    }
+@media screen and (max-width: 320px) {
+  .banner_gallery .contplay .video-play-button {
+    left: 220px !important;
+  }
 }
