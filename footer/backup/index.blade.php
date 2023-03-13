@@ -218,7 +218,7 @@
                             {{-- Boton Guardar y Publicar --}}
                             <div class="title_blog form-campo form-input">
                                 <div class="btn-save-blog">
-                                    <button type="submit" class="text-btn">Guardar y Publicar</button>
+                                    <button type="submit" class="text-btn">Guardar y publicar</button>
                                 </div>
                             </div>
                         </div>

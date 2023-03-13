@@ -1,0 +1,36 @@
+.list-social {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-list{
+  text-align:left;
+}
+/* .row {
+    display: flex !important;
+} */
+.list-social-link {
+  font-size: 2.4em;
+  color: white !important;
+}
+.list-social-link:hover {
+  background: linear-gradient(-45deg, #eeeae8, #91858a, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.row .col-sm-12 {
+  margin-bottom: 0.8em !important;
+  display: flex !important;
+  justify-content: center;
+}
+.col-sm-4{
+  display: flex !important;
+  justify-content: space-around ;
+  color: #23d5ab !important;
+}
+@media only screen and (max-width: 767px) {
+  .list-social {
+    margin-left: 0;
+  }
+}

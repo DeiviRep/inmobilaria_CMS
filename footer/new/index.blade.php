@@ -16,13 +16,13 @@
         <div class="banner_gallery">
             <h2 class="title">Pie de página</h2>
             <div class="contplay">
-                <a class="video-play-button" id="play-videos" href="#comofunciona">
+                <a class="video-play-button sidebar-link discover is-active" id="play-videos" href="#comofunciona">
                 <span></span>
                 </a>
             </div>
             <div class="link">
                 {{-- MODIFICANDO EL HREF para PLANTILLA 1004 --}}
-                <a href="https://inmobiliariarialsa.com.mx/{{ $paginaactiva->dominio }}" id="url-website" class="site-card__i" target="_blank">
+                <a href="https://inmobiliariarialsa.com.mx/{{ $paginaactiva->dominio }}" id="url-website" class="site-card__i sidebar-link discover is-active" target="_blank">
                     Ir al sitio web
                     <i class="fas fa-arrow-right flecha1"></i>
                 </a>
@@ -308,4 +308,9 @@
 <script src="{{ asset('EstilosCMS/general/js/general-scripts-antoniza.js') }}
 "></script>
 {{-- FIN ACTIVE --}}
+<script src="{{ asset('EstilosCMS/footer/js/script.js') }}
+"></script>
+{{-- AÑADIENDO ANIMACIONES --}}
+
+{{-- FIN ANIMATE --}}
 @endsection
