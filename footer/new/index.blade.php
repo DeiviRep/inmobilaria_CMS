@@ -85,7 +85,7 @@
                                 @endif
                             </div>
                         </div>
-                        <div class= "input__wrap">
+                        <div class= "input__wrap texta2">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Derechos Reservados --}}
                                 <input type="text" class="input__field" autocomplete="off" required class="form-control"  name="cr" value="{{$footer->cr}}">
@@ -97,7 +97,7 @@
                                 <label class="t_label">Derechos reservados</label>
                             </div>
                         </div>
-                        <div class= "input__wrap add-height">
+                        <div class= "input__wrap add-height texta3">
                             <div class="title_blog form-campo form-input flex-c">
                                 <ul class="list-social">
                                     <li class="list-social-item"><a class="list-social-link" href="#facebook"><i class="fab fa-facebook-f"></i></a></li>
@@ -214,7 +214,7 @@
                             </div>
                         </section>
 
-                        <div class= "input__wrap">
+                        <div class= "input__wrap texta4">
                             {{-- Boton Guardar y Publicar --}}
                             <div class="title_blog form-campo form-input">
                                 <div class="btn-save-blog">
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                     <div class="header_form header_form_resp">
-                        <div class= "input__wrap">
+                        <div class= "input__wrap texta5">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Horario --}}
                                 <input type="text" class="input__field" autocomplete="off" class="form-control" name="horarios" value="{{$footer->horarios}}">
@@ -236,7 +236,7 @@
                                 <label class="t_label">Horarios</label>
                             </div>
                         </div>
-                        <div class= "input__wrap">
+                        <div class= "input__wrap texta6">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Telefono --}}
                                 <input type="text" class="input__field" autocomplete="off" class="form-control"  name="telefono" value="{{$footer->telefono}}">
@@ -248,7 +248,7 @@
                                 <label class="t_label">Número de teléfono</label>
                             </div>
                         </div>
-                        <div class= "input__wrap">
+                        <div class= "input__wrap texta7">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Correo --}}
                                 <input type="email" class="input__field" autocomplete="off" class="form-control"  name="correo" value="{{$footer->correo}}">
@@ -260,7 +260,7 @@
                                 <label class="t_label">Correo electrónico</label>
                             </div>
                         </div>
-                        <div class= "input__wrap card-color">
+                        <div class= "input__wrap card-color texta8">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Background --}}
                                 <div class="box-input-color">
@@ -308,9 +308,9 @@
 <script src="{{ asset('EstilosCMS/general/js/general-scripts-antoniza.js') }}
 "></script>
 {{-- FIN ACTIVE --}}
-<script src="{{ asset('EstilosCMS/footer/js/script.js') }}
-"></script>
-{{-- AÑADIENDO ANIMACIONES --}}
-
+{{-- INICIO ANIMATE --}}
+<!--Utilizaremos la libreria jQuery con la version 3.3.1-->
+<script src="{{ asset('EstilosCMS/footer/js/jquery-3.3.1.js') }}"></script>
+<script src="{{ asset('EstilosCMS/footer/js/script.js') }}"></script>
 {{-- FIN ANIMATE --}}
 @endsection
