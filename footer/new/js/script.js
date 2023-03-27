@@ -1,7 +1,7 @@
 //ACTUANDO AL ANCHEAR LA PAGINA
 // window.addEventListener("resize", function () {
 // 	console.log("CONDICION");
-// 	if (window.innerWidth <= 767) {
+// 	if (window.innerWidth <= 767) { 
 // 	  console.log("ESTA RESPONSIVE: " + window.innerWidth);
 // 	  $(document).ready(function() {
 // 		setTimeout(function() {
