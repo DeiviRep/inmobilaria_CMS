@@ -1,13 +1,14 @@
 /* ESTILO DE DESLISAMIENTO */
 .input__wrap {
   display: none;
-  animation: mymove 2.4s;
+  animation: mymove 2s;
 }
 
 .banner_gallery {
   height: 180px;
+  display: none;
   position: relative;
-  animation: mymove 2.4s;
+  animation: mymove 2s;
 }
 /* AGREGANDO ANIMACION DE TRANSLATE */
 @keyframes mymove {
@@ -34,7 +35,7 @@
   position: absolute !important;
   top: 10px !important;
 }
-.title {
+.banner_gallery .title {
   position: relative !important;
   top: 40px !important;
 }
@@ -72,7 +73,7 @@
   .banner_gallery {
     height: auto;
   } /*ARREGLADO*/
-  .title {
+  .banner_gallery .title {
     position: static !important;
     top: auto !important; /*OJO CON ESTO*/
   } /*ARREGLADO*/
