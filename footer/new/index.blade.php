@@ -14,23 +14,25 @@
     <div id="ui-view">
         {{-- Banner --}}
         <div class="banner_gallery">
-            <h2 class="title">Pie de página</h2>
-            <div class="contplay">
-                <a class="video-play-button sidebar-link discover is-active" id="play-videos" href="#comofunciona">
-                <span></span>
-                </a>
-            </div>
-            <div class="link">
-                {{-- MODIFICANDO EL HREF para PLANTILLA 1004 --}}
-                <a href="https://inmobiliariarialsa.com.mx/{{ $paginaactiva->dominio }}" id="url-website" class="site-card__i sidebar-link discover is-active" target="_blank">
-                    Ir al sitio web
-                    <i class="fas fa-arrow-right flecha1"></i>
-                </a>
-                {{-- DEJANDOLO ESTO PARA PRUEBAS DavidP--}}
-                {{-- <a href=href="/plantillas" id="url-website" class="site-card__i" target="_blank">
-                    Ir al sitio web
-                    <i class="fas fa-arrow-right flecha1"></i>
-                </a> --}}
+            <div class="banner_component">
+                <h2 class="title">Pie de página</h2>
+                <div class="contplay">
+                    <a class="video-play-button sidebar-link discover is-active" id="play-videos" href="#comofunciona">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="link">
+                    {{-- MODIFICANDO EL HREF para PLANTILLA 1004 --}}
+                    <a href="https://inmobiliariarialsa.com.mx/{{ $paginaactiva->dominio }}" id="url-website" class="site-card__i sidebar-link discover is-active" target="_blank">
+                        Ir al sitio web
+                        <i class="fas fa-arrow-right flecha1"></i>
+                    </a>
+                    {{-- DEJANDOLO ESTO PARA PRUEBAS DavidP--}}
+                    {{-- <a href=href="/plantillas" id="url-website" class="site-card__i" target="_blank">
+                        Ir al sitio web
+                        <i class="fas fa-arrow-right flecha1"></i>
+                    </a> --}}
+                </div>
             </div>
         <!-- Modal -->
             <section id="comofunciona" class="comofunciona">
