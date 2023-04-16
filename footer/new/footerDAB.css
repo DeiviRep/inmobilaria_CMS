@@ -1,3 +1,55 @@
+/* ESTILO BANER */
+.banner_gallery{
+	width: 100% ;
+	padding: 20px 20px 20px 40px ;
+	border-radius: 10px ;
+	box-sizing: border-box ;
+	background-color: rgba(130 , 130 , 130, 0.3) ;
+	color: #FFFFFF ;
+	/* height: 320px; */
+	/* display: flex ; */
+	flex-direction: column ;
+	justify-content: center ;
+	/* background-position-y: -55px !important; */
+	/* background-image: url('/img/galeria/banner.svg'); */
+	background-repeat: no-repeat ;
+	/* background-size: 55% ; */
+	/* background-position: 60rem ; */
+}
+.banner_gallery .title{
+	font-family: "Poppins";
+	font-size: 50px;
+	font-weight: bold;
+	display: flex;
+	justify-content: start;
+	margin: 0px ;
+	letter-spacing: 3px ;
+}
+.banner_gallery .details{
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: start;
+	padding: 0px ;
+	color: #fff;
+	font-size: 20px;
+	font-weight: lighter;
+	/* max-width: 450px ; */
+	margin: 20px 0px 43px 0px ;
+}
+/* ::selection{
+  color: #fff;
+  background: #6990F2;
+} */
+
+/* p {
+  line-height: 1.5em;
+}
+
+h1 + p, p + p {
+  margin-top: 10px;
+} */
+/* FIN BANER */
 /* ESTILO DE DESLISAMIENTO  */
 .input__wrap {
   display: none;
@@ -57,7 +109,6 @@
   flex-wrap: wrap;
   column-gap: 2em;
   row-gap: 1em;
-  tra
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .site-card__i {
@@ -65,9 +116,9 @@
   } /*ARREGLADO*/
 }
 @media screen and (max-width: 830px) {
-  .banner_gallery {
-    /* height: 200px; */
-  } /*ARREGLADO*/
+  .banner_gallery .title {
+    font-size: 45px;
+  }
   .banner_gallery .contplay .video-play-button {
     top: 10px !important;
     left: 400px !important;
@@ -121,6 +172,12 @@
   }
 }
 @media screen and (max-width: 575px) {
+  .banner_gallery{
+    padding: 40px 20px;
+  }
+  .banner_gallery .title {
+    font-size: 50px;
+  }
   .banner_gallery .contplay .video-play-button {
     left: 250px !important;
     top: 65px !important;
@@ -129,6 +186,9 @@
   }
 }
 @media screen and (max-width: 372px) {
+  .banner_gallery .title {
+    font-size: 35px;
+  } /*ARREGLADO*/
   .banner_gallery .contplay .video-play-button {
     left: 200px !important;
     top: 56px !important;
@@ -160,4 +220,7 @@
   .banner_gallery .contplay .video-play-button {
     left: 180px !important;
   }
+  .banner_gallery .title {
+    font-size: 34px;
+  } /*ARREGLADO*/
 }

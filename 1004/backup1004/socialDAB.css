@@ -2,6 +2,9 @@
   list-style: none;
   padding: 0;
 }
+.footer .footer-list{
+  text-align:left;
+}
 /* .row {
     display: flex !important;
 } */

@@ -3,7 +3,7 @@
 
 @section('contenido')
 
-<link rel="stylesheet" type="text/css" href="{{ asset('css/galeria.css') }}">
+{{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/galeria.css') }}"> --}}
 <link rel="stylesheet" type="text/css" href="{{ asset('EstilosCMS/footer/css/footerFRA.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('EstilosCMS/footer/css/footerDAB.css')}}">{{--PONIENDO NUEVO ESTILO DAVID P.--}}
 <div class="nuevo-contenedor-principal">
