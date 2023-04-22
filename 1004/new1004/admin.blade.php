@@ -249,6 +249,7 @@
 
 
         <script src="{{asset('themes/1004/js/layout.min.js')}}"></script>
+        <script src="{{asset('themes/1004/js/socialDAB.js')}}"></script>
         <script src="{{asset('lib/jquery/jquery.min.js')}}"></script>
         <script src="{{asset('lib/jquery/jquery-migrate.min.js')}}"></script>
         <script src="{{asset('lib/popper/popper.min.js')}}"></script>

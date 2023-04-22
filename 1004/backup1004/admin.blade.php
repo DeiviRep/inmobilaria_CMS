@@ -158,7 +158,7 @@
 
             <div class="footer-seperator">
                 <div class="content-lg container">
-                    <div class="row">
+                    <div class="row row-lg">
                         <div class="col-sm-2 sm-margin-b-50">
 
                             <ul class="list-unstyled footer-list">

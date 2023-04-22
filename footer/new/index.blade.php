@@ -53,7 +53,7 @@
                 </div>
             </section>
         <!--modal-->     
-            <p class="details" id="details-par">Puede añadir información de contacto, indicando su disponibilidad entre otros datos.
+            <p class="details" id="details-par">Incluye información adicional sobre la empresa como las redes sociales que permiten a los visitantes conectarse con la marca a través de diferentes canales.
           </p>
         </div>
         {{-- Fin Banner --}}
