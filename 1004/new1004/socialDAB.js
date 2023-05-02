@@ -2,11 +2,10 @@
 const validaEnlace = () => {
   const enlaces = document.querySelectorAll(".list-social-link");
   enlaces.forEach((enlace) => {
-    const direccionHref = enlace.href;
-    const acortaHref = direccionHref.split("/").slice(0, -1).join("/");
-    if (acortaHref === "https://inmobiliariarialsa.com.mx") {
+    const urlHref = enlace.href;
+    if (urlHref.indexOf("vacio") !== -1) {
       enlace.parentNode.parentNode.style.cssText = 'display: none !important';
-      enlace.style.display = 'none'
+      enlace.style.display = 'none';
     }
   });
 };

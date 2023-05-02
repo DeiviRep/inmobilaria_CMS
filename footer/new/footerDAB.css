@@ -37,20 +37,18 @@
 	/* max-width: 450px ; */
 	margin: 20px 0px 43px 0px ;
 }
-/* ::selection{
-  color: #fff;
-  background: #6990F2;
-} */
-
-/* p {
-  line-height: 1.5em;
+.texta .form-campo .num__direccion{
+  position: absolute;
+  text-align-last: right;
+  width: 100%;
+  top: 114px !important;
 }
-
-h1 + p, p + p {
-  margin-top: 10px;
-} */
-/* FIN BANER */
-/* ESTILO DE DESLISAMIENTO  */
+.form-campo #num__title {
+  position: absolute;
+  text-align-last: right;
+  width: 100%;
+  top: 24px;
+}
 .input__wrap {
   display: none;
   animation: mymove 2s;

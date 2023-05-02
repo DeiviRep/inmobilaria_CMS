@@ -74,12 +74,13 @@
                 <div class="form-options-contenedor">
                     <div class="header_form">
                         {{ csrf_field() }}
-                        <input name="_method" type="hidden" value="PATCH">
+                        <input name="_method" type="hidden" value="PATCH" maxlength="40">
                         <div class= "input__wrap texta">
                             {{-- Input Direccion --}}
                             <div class="desciption_blog form-campo form-input">       
-                            <textarea name="direccion" class="input__field" class="form-control" required>{{$footer->direccion}}</textarea>
+                            <textarea name="direccion" id="input_direccion" class="input__field" class="form-control" required maxlength="40">{{$footer->direccion}}</textarea>
                             <label class="t_label" >Dirección</label>
+                            <p class="num__direccion" id="num__title" data-num-limitDireccion>0/40</p>
                                 @if ($errors->has('direccion'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('direccion') }}</strong>
@@ -90,13 +91,14 @@
                         <div class= "input__wrap texta2">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Derechos Reservados --}}
-                                <input type="text" class="input__field" autocomplete="off" required class="form-control"  name="cr" value="{{$footer->cr}}">
+                                <input type="text" id="input_derechos" class="input__field" autocomplete="off" required class="form-control"  name="cr" value="{{$footer->cr}}" maxlength="20">
                                 @if ($errors->has('cr'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('cr') }}</strong>
                                 </span>
                                 @endif
                                 <label class="t_label">Derechos reservados</label>
+                                <p class="num__derechos" id="num__title" data-num-limitDerechos>0/20</p>
                             </div>
                         </div>
                         <div class= "input__wrap add-height texta3">
@@ -119,7 +121,7 @@
                             <div class="comofunciona_container">
                                 <h2 class="comofunciona_social">Copia la URL de tu perfil de <b>Facebook</b> que quieres compartir y pégala a continuación</h2>
                                 <div class="box-input form-input">
-                                    <input type="text" class="input__field" autocomplete="off" class="form-control"  name="facebook" value="{{$footer->facebook}}">
+                                    <input id="redSocial" type="text" class="input__field" autocomplete="off" class="form-control"  name="facebook" value="{{$footer->facebook}}">
                                     <label class="t_label">Link Directo</label>
                                 </div>
                                 <figure class="comofunciona_picture">
@@ -136,7 +138,7 @@
                             <div class="comofunciona_container">
                                 <h2 class="comofunciona_social">Copia la URL de tu perfil de <b>Instagram</b> que quieres compartir y pégala a continuación</h2>
                                 <div class="box-input form-input">
-                                    <input type="text" class="input__field" autocomplete="off" class="form-control"  name="instagram" value="{{$footer->instagram}}">
+                                    <input id="redSocial" type="text" class="input__field" autocomplete="off" class="form-control"  name="instagram" value="{{$footer->instagram}}">
                                     <label class="t_label">Link Directo</label>
                                 </div>
                                 <figure class="comofunciona_picture">
@@ -153,7 +155,7 @@
                             <div class="comofunciona_container">
                                 <h2 class="comofunciona_social">Copia la URL de tu perfil de <b>Twitter</b> que quieres compartir y pégala a continuación</h2>
                                 <div class="box-input form-input">
-                                    <input type="text" class="input__field" autocomplete="off" class="form-control"  name="twitter" value="{{$footer->twitter}}">
+                                    <input id="redSocial" type="text" class="input__field" autocomplete="off" class="form-control"  name="twitter" value="{{$footer->twitter}}">
                                     <label class="t_label">Link Directo</label>
                                 </div>
                                 <figure class="comofunciona_picture">
@@ -170,7 +172,7 @@
                             <div class="comofunciona_container">
                                 <h2 class="comofunciona_social">Copia la URL de tu perfil de <b>Youtube</b> que quieres compartir y pégala a continuación</h2>
                                 <div class="box-input form-input">
-                                    <input type="text" class="input__field" autocomplete="off" class="form-control"  name="youtube" value="{{$footer->youtube}}">
+                                    <input id="redSocial" type="text" class="input__field" autocomplete="off" class="form-control"  name="youtube" value="{{$footer->youtube}}">
                                     <label class="t_label">Link Directo</label>
                                 </div>
                                 <figure class="comofunciona_picture">
@@ -187,7 +189,7 @@
                             <div class="comofunciona_container">
                                 <h2 class="comofunciona_social">Copia la URL de tu perfil de <b>Tiktok</b> que quieres compartir y pégala a continuación</h2>
                                 <div class="box-input form-input">
-                                    <input type="text" class="input__field" autocomplete="off" class="form-control"  name="tiktok" value="{{$footer->tiktok}}">
+                                    <input id="redSocial" type="text" class="input__field" autocomplete="off" class="form-control"  name="tiktok" value="{{$footer->tiktok}}">
                                     <label class="t_label">Link Directo</label>
                                 </div>
                                 <figure class="comofunciona_picture">
@@ -204,7 +206,7 @@
                             <div class="comofunciona_container">
                                 <h2 class="comofunciona_social">Copia la URL de tu perfil de <b>Whatsapp</b> que quieres compartir y pégala a continuación</h2>
                                 <div class="box-input form-input">
-                                    <input type="text" class="input__field" autocomplete="off" class="form-control"  name="whatsapp" value="{{$footer->whatsapp}}">
+                                    <input id="redSocial" type="text" class="input__field" autocomplete="off" class="form-control"  name="whatsapp" value="{{$footer->whatsapp}}">
                                     <label class="t_label">Link Directo</label>
                                 </div>
                                 <figure class="comofunciona_picture">
@@ -229,37 +231,40 @@
                         <div class= "input__wrap texta5">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Horario --}}
-                                <input type="text" class="input__field" autocomplete="off" class="form-control" name="horarios" value="{{$footer->horarios}}">
+                                <input type="text" class="input__field" id="input_horarios" autocomplete="off" class="form-control" name="horarios" value="{{$footer->horarios}}" maxlength="10">
                                 @if ($errors->has('horarios'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('horarios') }}</strong>
                                 </span>
                                 @endif
                                 <label class="t_label">Horarios</label>
+                                <p class="num__horarios" id="num__title" data-num-limitHorarios>0/10</p>
                             </div>
                         </div>
                         <div class= "input__wrap texta6">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Telefono --}}
-                                <input type="text" class="input__field" autocomplete="off" class="form-control"  name="telefono" value="{{$footer->telefono}}">
+                                <input type="text" id="input_telf" class="input__field" autocomplete="off" class="form-control"  name="telefono" value="{{$footer->telefono}}" maxlength="13">
                                 @if ($errors->has('telefono'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('telefono') }}</strong>
                                 </span>
                                 @endif
                                 <label class="t_label">Número de teléfono</label>
+                                <p class="num__telefono" id="num__title" data-num-limitTelefono>0/13</p>
                             </div>
                         </div>
                         <div class= "input__wrap texta7">
                             <div class="title_blog form-campo form-input">
                                 {{-- Input Correo --}}
-                                <input type="email" class="input__field" autocomplete="off" class="form-control"  name="correo" value="{{$footer->correo}}">
+                                <input type="email" id="input_email" class="input__field" autocomplete="off" class="form-control"  name="correo" value="{{$footer->correo}}" maxlength="35">
                                 @if ($errors->has('correo'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('correo') }}</strong>
                                 </span>
                                 @endif
                                 <label class="t_label">Correo electrónico</label>
+                                <p class="num__email" id="num__title" data-num-limitEmail>0/35</p>
                             </div>
                         </div>
                         <div class= "input__wrap card-color texta8">
