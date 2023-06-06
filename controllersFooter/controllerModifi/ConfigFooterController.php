@@ -47,7 +47,7 @@ class ConfigFooterController extends Controller
             'direccion' => 'max:250',
             'telefono' => 'max:15|min:7',
             'correo' => 'max:150|email',
-            'horarios' => 'max:10',
+            'horarios' => 'max:50',
         ]);
 
         $footer = ConfigFooter::findOrFail($id);
@@ -75,8 +75,6 @@ class ConfigFooterController extends Controller
             }
         }
         $footer->update();
-
-        Session::flash('succes', '¡Configuracion Exitosa!');
         return Redirect::to('admin/configuracion/footer');
     }
 }

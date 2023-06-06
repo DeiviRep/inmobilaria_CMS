@@ -1,72 +1,224 @@
-.banner_gallery .contplay .video-play-button{
-	top: 10px !important;
-	left: 440px !important;
-    position: relative !important;
+/* ESTILO BANER */
+.banner_gallery{
+	width: 100% ;
+	padding: 20px 20px 20px 40px ;
+	border-radius: 10px ;
+	box-sizing: border-box ;
+	background-color: rgba(130 , 130 , 130, 0.3) ;
+	color: #FFFFFF ;
+	/* height: 320px; */
+	/* display: flex ; */
+	flex-direction: column ;
+	justify-content: center ;
+	/* background-position-y: -55px !important; */
+	/* background-image: url('/img/galeria/banner.svg'); */
+	background-repeat: no-repeat ;
+	/* background-size: 55% ; */
+	/* background-position: 60rem ; */
 }
-.site-card__i.url-des{
-    position: absolute !important;
-    top: 10px;
+.banner_gallery .title{
+	font-family: "Poppins";
+	font-size: 50px;
+	font-weight: bold;
+	display: flex;
+	justify-content: start;
+	margin: 0px ;
+	letter-spacing: 3px ;
+}
+.banner_gallery .details{
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: start;
+	padding: 0px ;
+	color: #fff;
+	font-size: 20px;
+	font-weight: lighter;
+	/* max-width: 450px ; */
+	margin: 20px 0px 43px 0px ;
+}
+.texta .form-campo .num__direccion{
+  position: absolute;
+  text-align-last: right;
+  width: 100%;
+  top: 114px !important;
+}
+.form-campo #num__title {
+  position: absolute;
+  text-align-last: right;
+  width: 100%;
+  top: 24px;
+}
+.input__wrap {
+  display: none;
+  animation: mymove 2s;
+}
+
+.banner_gallery {
+  height: auto;
+  display: none;
+  position: relative;
+  animation: mymove 2s;
+}
+/* AGREGANDO ANIMACION DE TRANSLATE */
+@keyframes mymove {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+  /*from {top: 200px;}
+  to {top: 0px;}*/
+}
+/* FIN ANIMACION */
+/* FIN DESPLASAMIENTO */
+
+.banner_gallery .contplay .video-play-button {
+  /* top: 10px !important;
+  left: 440px !important; */
+  /* position: relative !important; */
+  transform: translateX(-0%) translateY(-0%) !important;
+  position: static;
+}
+.banner_gallery .details {
+  /* margin: 0 !important; */
+  /* margin: 20px 0px 43px 0px; */
 }
 .site-card__i {
-    position: absolute !important;
-    top: 10px !important;
+  /* position: absolute !important;
+  top: 10px !important; */
+  position: static;
 }
-.banner_gallery {
-    height: 180px;
-}
-.title {
-    position: relative !important;
-    top: 40px !important;
+.banner_gallery .title {
+  /* position: relative !important;
+  top: 40px !important; */
 }
 .link {
-    position: relative !important;
+  /* position: relative !important; */
+  /* bottom: 75px;
+  right: 120px; */
+}
+.banner_component {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  row-gap: 1em;
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .site-card__i {
+    /* width: 170px; */
+  } /*ARREGLADO*/
+}
+@media screen and (max-width: 830px) {
+  .banner_gallery .title {
+    font-size: 45px;
+  }
+  .banner_gallery .contplay .video-play-button {
+    top: 10px !important;
+    left: 400px !important;
+    /* position: relative !important; */
+  } /*ARREGLADO*/
+  .site-card__i {
+    left: 565px !important;
+  }
+  .banner_component {
+    column-gap: 1em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .site-card__i {
+    width: 170px;
+    left: 525px !important;
+  } /*ARREGLADO*/
+  .link {
     bottom: 75px;
-    right: 120px;
+    right: 70px !important;
+  }
 }
-@media screen and (max-width: 991px) and (min-width: 768px){
-    .site-card__i {
-        width: 170px;
-    }
+@media screen and (max-width: 704px) {
+  .banner_component {
+    display: inline;
+  }
+  .banner_gallery {
+    height: auto;
+  } /*ARREGLADO*/
+  .banner_gallery .title {
+    position: static !important;
+    top: auto !important; /*OJO CON ESTO*/
+  } /*ARREGLADO*/
+  .site-card__i {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 176px;
+    margin-left: 0px;
+  } /*ARREGLADO*/
+  .link {
+    position: static !important;
+    bottom: 0 !important ;
+    right: 0 !important;
+  } /*ARREGLADO*/
+  .banner_gallery .contplay .video-play-button {
+    left: 420px !important;
+    top: 20px !important;
+    position: absolute !important;
+    display: block !important;
+  }
 }
-@media screen and (max-width: 830px){
-    .banner_gallery {
-        height: 200px;
-    }
-    .banner_gallery .contplay .video-play-button{
-        top: 10px !important;
-        left: 410px !important;
-        position: relative !important;
-    }
+@media screen and (max-width: 575px) {
+  .banner_gallery{
+    padding: 40px 20px;
+  }
+  .banner_gallery .title {
+    font-size: 50px;
+  }
+  .banner_gallery .contplay .video-play-button {
+    left: 250px !important;
+    top: 65px !important;
+    position: absolute !important;
+    display: block !important;
+  }
 }
-@media screen and (max-width: 767px){
-    .site-card__i {
-        width: 170px;
-    }
-    .link {
-        position: relative !important;
-        bottom: 75px;
-        right: 70px !important;
-    }
+@media screen and (max-width: 372px) {
+  .banner_gallery .title {
+    font-size: 35px;
+  } /*ARREGLADO*/
+  .banner_gallery .contplay .video-play-button {
+    left: 200px !important;
+    top: 56px !important;
+    position: absolute !important;
+    width: 10px;
+    height: 22px;
+    padding-left: 15px;
+    padding-right: 21px;
+  }
+  .banner_gallery .contplay .video-play-button span {
+    top: 1.2px;
+    left: 2px;
+    border-left-width: 20px;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+  }
+  .btn-save-blog .text-btn {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  /* .form-options-contenedor .btn-save-blog{
+    margin-right: 15px;
+    margin-left: 15px;
+  } */
 }
-@media screen and (max-width: 704px){
-    .banner_gallery {
-        height: auto;
-    }
-    .title {
-        position: none !important;
-        top: auto !important;
-    }
-    .site-card__i {
-		left: 200 !important;
-	}
-    .link {
-        position: none !important;
-        bottom: 70px !important ;
-        right: auto !important;
-    }
-    .banner_gallery .contplay .video-play-button{
-		left: 400px !important;
-		top: 1px !important;
-        position: none !important;
-	}
+@media screen and (max-width: 320px) {
+  .banner_gallery .contplay .video-play-button {
+    left: 180px !important;
+  }
+  .banner_gallery .title {
+    font-size: 34px;
+  } /*ARREGLADO*/
 }

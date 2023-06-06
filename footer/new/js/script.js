@@ -20,15 +20,19 @@ const filtraRedSocial = () => {
   });
 };
 const limitInput = () => {
-  console.log("paso1");
+  // console.log("paso1");
   miInputTelf.addEventListener("input", function () {
-    console.log("paso2");
+    // console.log("paso2");
     const numCaracteres = this.value.length;
-    miParrafoTelf.textContent = numCaracteres + "/13";
+    if(numCaracteres > 13){
+      this.value = this.value.slice(0, 13); // Trunca el valor a la cantidad máxima de dígitos
+    }else{
+      miParrafoTelf.textContent = numCaracteres + "/13";
+    }
   });
   miInputHorarios.addEventListener("input", function () {
     const numCaracteres = this.value.length;
-    miParrafoHorarios.textContent = numCaracteres + "/10";
+    miParrafoHorarios.textContent = numCaracteres + "/35";
   });
   miInputEmail.addEventListener("input", function () {
     const numCaracteres = this.value.length;
@@ -36,7 +40,7 @@ const limitInput = () => {
   });
   miInputDireccion.addEventListener("input", function () {
     const numCaracteres = this.value.length;
-    miParrafoDireccion.textContent = numCaracteres + "/40";
+    miParrafoDireccion.textContent = numCaracteres + "/65";
   });
   miInputDerechos.addEventListener("input", function () {
     const numCaracteres = this.value.length;
@@ -47,11 +51,11 @@ actualizaLimitInput = () => {
   const numCaracteres0 = miInputTelf.value.length;
   miParrafoTelf.textContent = numCaracteres0 + "/13";
   const numCaracteres1 = miInputHorarios.value.length;
-  miParrafoHorarios.textContent = numCaracteres1 + "/10";
+  miParrafoHorarios.textContent = numCaracteres1 + "/35";
   const numCaracteres2 = miInputEmail.value.length;
   miParrafoEmail.textContent = numCaracteres2 + "/35";
   const numCaracteres3 = miInputDireccion.value.length;
-  miParrafoDireccion.textContent = numCaracteres3 + "/40";
+  miParrafoDireccion.textContent = numCaracteres3 + "/65";
   const numCaracteres4 = miInputDerechos.value.length;
   miParrafoDerechos.textContent = numCaracteres4 + "/20";
 };

@@ -60,6 +60,14 @@
   position: relative;
   animation: mymove 2s;
 }
+/* Guardar y Publicar */
+.form-options-contenedor .btn-save-blog {
+  width: 100%;
+  }
+  .btn-save-blog .text-btn{
+    width: 100%;
+    }
+/* Fin guardar y publicar */
 /* AGREGANDO ANIMACION DE TRANSLATE */
 @keyframes mymove {
   0% {
