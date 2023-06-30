@@ -1,43 +1,35 @@
 /* ESTILO BANER */
-.banner_gallery{
-	width: 100% ;
-	padding: 20px 20px 20px 40px ;
-	border-radius: 10px ;
-	box-sizing: border-box ;
-	background-color: rgba(130 , 130 , 130, 0.3) ;
-	color: #FFFFFF ;
-	/* height: 320px; */
-	/* display: flex ; */
-	flex-direction: column ;
-	justify-content: center ;
-	/* background-position-y: -55px !important; */
-	/* background-image: url('/img/galeria/banner.svg'); */
-	background-repeat: no-repeat ;
-	/* background-size: 55% ; */
-	/* background-position: 60rem ; */
+.banner_gallery {
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgba(130, 130, 130, 0.3);
+  color: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
 }
-.banner_gallery .title{
-	font-family: "Poppins";
-	font-size: 50px;
-	font-weight: bold;
-	display: flex;
-	justify-content: start;
-	margin: 0px ;
-	letter-spacing: 3px ;
+.banner_gallery .title {
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  margin: 0px;
+  letter-spacing: 3px;
 }
-.banner_gallery .details{
-	font-family: 'Muli', sans-serif;
-	display: flex;
-	/* flex-direction: column; */
-	justify-content: start;
-	padding: 0px ;
-	color: #fff;
-	font-size: 20px;
-	font-weight: lighter;
-	/* max-width: 450px ; */
-	margin: 20px 0px 43px 0px ;
+.banner_gallery .details {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  justify-content: start;
+  padding: 0px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 20px 0px 43px 0px;
 }
-.texta .form-campo .num__direccion{
+.texta .form-campo .num__direccion {
   position: absolute;
   text-align-last: right;
   width: 100%;
@@ -63,10 +55,10 @@
 /* Guardar y Publicar */
 .form-options-contenedor .btn-save-blog {
   width: 100%;
-  }
-  .btn-save-blog .text-btn{
-    width: 100%;
-    }
+}
+.btn-save-blog .text-btn {
+  width: 100%;
+}
 /* Fin guardar y publicar */
 /* AGREGANDO ANIMACION DE TRANSLATE */
 @keyframes mymove {
@@ -85,29 +77,11 @@
 /* FIN DESPLASAMIENTO */
 
 .banner_gallery .contplay .video-play-button {
-  /* top: 10px !important;
-  left: 440px !important; */
-  /* position: relative !important; */
   transform: translateX(-0%) translateY(-0%) !important;
   position: static;
 }
-.banner_gallery .details {
-  /* margin: 0 !important; */
-  /* margin: 20px 0px 43px 0px; */
-}
 .site-card__i {
-  /* position: absolute !important;
-  top: 10px !important; */
   position: static;
-}
-.banner_gallery .title {
-  /* position: relative !important;
-  top: 40px !important; */
-}
-.link {
-  /* position: relative !important; */
-  /* bottom: 75px;
-  right: 120px; */
 }
 .banner_component {
   display: flex;
@@ -116,11 +90,8 @@
   column-gap: 2em;
   row-gap: 1em;
 }
-@media screen and (max-width: 991px) and (min-width: 768px) {
-  .site-card__i {
-    /* width: 170px; */
-  } /*ARREGLADO*/
-}
+/* @media screen and (max-width: 991px) and (min-width: 768px) {
+} */
 @media screen and (max-width: 830px) {
   .banner_gallery .title {
     font-size: 45px;
@@ -128,7 +99,6 @@
   .banner_gallery .contplay .video-play-button {
     top: 10px !important;
     left: 400px !important;
-    /* position: relative !important; */
   } /*ARREGLADO*/
   .site-card__i {
     left: 565px !important;
@@ -178,7 +148,7 @@
   }
 }
 @media screen and (max-width: 575px) {
-  .banner_gallery{
+  .banner_gallery {
     padding: 40px 20px;
   }
   .banner_gallery .title {
@@ -217,10 +187,6 @@
     display: flex;
     justify-content: center;
   }
-  /* .form-options-contenedor .btn-save-blog{
-    margin-right: 15px;
-    margin-left: 15px;
-  } */
 }
 @media screen and (max-width: 320px) {
   .banner_gallery .contplay .video-play-button {
@@ -229,4 +195,98 @@
   .banner_gallery .title {
     font-size: 34px;
   } /*ARREGLADO*/
+}
+
+/* ------------------------ */
+/* Orientacion Horizontal */
+/* ------------------------ */
+@media screen and (orientation: landscape) and (min-width: 1300px) {
+  /* Estilos para pantallas en orientación horizontal (landscape) y un ancho mínimo de 800px */
+  .comofunciona_img.image-wd {
+    width: 40%;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 1300px) {
+  /* Estilos para pantallas en orientación horizontal (landscape) y un ancho mínimo de 800px */
+  .comofunciona_img.image-wd {
+    width: 30%;
+  }
+  .comofunciona_title {
+    font-size: 2em;
+  }
+  .comofunciona_paragraph{
+    line-height: 1.3;
+  }
+  .comofunciona_container {
+    padding-top: 0.5em;
+  }
+  .modal_close {
+    padding: 0.5em 1em;
+    font-weight: 400;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+  /* Estilos para pantallas en orientación horizontal (landscape) y un ancho mínimo de 800px */
+  .comofunciona_img.image-wd {
+    width: 20%;
+  }
+  .comofunciona_container {
+    padding-top: 1em;
+  }
+  .comofunciona_title {
+    font-size: 1.5em;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  /* Estilos para pantallas en orientación horizontal (landscape) y un ancho mínimo de 800px */
+  /* .comofunciona_container {
+    padding-top: 0;
+  } */
+}
+@media screen and (orientation: landscape) and (max-width: 800px) {
+  .comofunciona_img.image-wd {
+    width:0%;
+  }
+  .comofunciona_container {
+    padding-top: 2em;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 700px) {
+  .comofunciona_container {
+    padding-top: 0.5em;
+  }
+  .comofunciona_title {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 680px) {
+  .comofunciona_container {
+    padding-top: 2.5em;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 640px) {
+  /* .comofunciona_title {
+    font-size: 2.5em;
+  } */
+  /* .comofunciona_container {
+    padding-top: 3.5em;
+  } */
+}
+@media screen and (orientation: landscape) and (max-width: 540px) {
+  .comofunciona_title {
+    font-size: 1.5em;
+  }
+  .comofunciona_img.image-wd {
+    width: 0%;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 500px) {
+  .comofunciona_title {
+    font-size: 1.3em;
+  }
+  /* .comofunciona_container {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  } */
 }
