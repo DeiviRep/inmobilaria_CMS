@@ -1,0 +1,67 @@
+/* Efecto Card */
+.card-contenido:hover .card-equipo{
+    transform: rotateY(180deg);
+    transition: transform .5s;
+    /* backface-visibility: hidden; */
+}
+.card-equipo .back{
+  transform: rotateY(180deg)
+}
+/* Fin Efecto Card */
+
+/* Eliminar */
+.double-button {
+    justify-content:flex-start;
+}
+button {
+    margin-top: 0;
+  }
+/* Fin Eliminar */
+/* Nuevas modificaciones 2023 */
+.banner_gallery {
+  height: auto;
+  background-position-y: -141px !important;
+}
+.banner_gallery .title {
+  margin: 0px 0px 20px 0px;
+}
+.banner_gallery .contplay .video-play-button {
+  top: 139px;
+  left: 454px;
+}
+.site-card__i {
+  left: 512px;
+  top: 117px;
+}
+.banner_gallery .details {
+  margin: 0px 0px 20px 0px;
+}
+.card-body .card-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0 !important;
+  justify-content: space-evenly;
+}
+
+.card-body .card-columnas .card-contenido {
+  width: auto;
+  max-width: 100%;
+}
+/*  */
+@media (min-width: 576px) and (max-width: 1024px) {
+  .nuevo-contenedor-principal {
+    width: calc(100% - 68px);
+  }
+}
+@media (max-width: 768px) {
+  .card-body .card-columnas .card-contenido {
+    width: 250px;
+    max-width: 100%;
+  }
+  .nuevo-contenedor-principal {
+    width: 100%;
+  }
+  .card-body .card-columnas {
+    margin-left: -30px !important;
+  }
+}
