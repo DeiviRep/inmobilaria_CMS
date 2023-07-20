@@ -9,18 +9,21 @@
     <div class=" nuevo-contenedor-principal">
         @include('layouts.includes.nav')
         <div class="banner_gallery">
-            <h2 class="title">Mi equipo</h2>
-            <div class="contplay">
-
-                <a class="video-play-button" id="play-videos" href="#comofunciona">
-                    <span></span>
-                </a>
+            <div class="banner_component">
+                <h2 class="title">Mi equipo</h2>
+                <div class="contplay">
+                    <a class="video-play-button" id="play-videos" href="#comofunciona">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="http://gentiamkt.com/equipos" id="url-website" class="site-card__i" target="_blank">
+                        Ir al sitio web
+                        <i class="fas fa-arrow-right flecha1"></i>
+                    </a>
+                </div>
             </div>
 
-            <a href="http://gentiamkt.com/equipos" id="url-website" class="site-card__i" target="_blank">
-                Ir al sitio web
-                <i class="fas fa-arrow-right flecha1"></i>
-            </a>
 
             <!-- Modal -->
             <section id="comofunciona" class="comofunciona">
@@ -58,10 +61,6 @@
                 </a>
                 <a data-toggle="modal" data-target="#modal-todos" class="boton_eliminar_todas_slider"
                     href="#modal-todos">Borrar todo</a>
-                <a href="http://gentiamkt.com/equipos" id="url-website" class="site-card__i site-escondida" target="_blank">
-                    Ir al sitio web
-                    <i class="fas fa-arrow-right flecha1"></i>
-                </a>
             </div>
         </div>
 
@@ -74,8 +73,8 @@
                             <ion-icon class="icon" name="checkmark-outline"></ion-icon>
                         </div>
                         <!-- <div class="info-alert">
-                          <div><span class="title">Información actualizada</span>
-                                <span class="message">Los cambios se han publicado con éxito</span> -->
+                                                                      <div><span class="title">Información actualizada</span>
+                                                                            <span class="message">Los cambios se han publicado con éxito</span> -->
                         <div class="info-alert">
                             <div class="mensaje_alert" style="display:none;">
                                 {{ Session::get('succes') }}
@@ -91,24 +90,23 @@
             </div>
         @endif
 
-        <div class="card-body">
+        <div class="target-body">
             <div>
-                <div class="card-columnas">
+                <div class="target-columnas">
                     @foreach ($equipo as $item)
-                        <div class="card-contenido">
-                            <div class="card-equipo">
+                        <div class="target-contenido">
+                            <div class="target-equipo-new">
                                 <!-- front -->
-                                <div class="card-liner front">
+                                <div class="target-liner front">
                                     <figure>
                                         <div class="img"
                                             style="background-image:url({{ asset('equipo/' . $item->imagen) }});">
                                     </figure>
-                                    <div class="card--social"></div>
-                                    <div class="card-title">
+                                    <div class="target-title">
                                         <h3 class="name">{{ $item->nombres }}</h3>
                                         <p class="post">{{ $item->cargo }}</p>
                                     </div>
-                                    <div class="card-btn">
+                                    <div class="target-btn">
                                         <div class="botones">
                                             <div class="moreinfo">Opciones</div>
                                         </div>
@@ -116,21 +114,16 @@
                                 </div>
                                 <!-- fin front -->
                                 <!-- back -->
-                                <div class="card-liner back">
-                                    <figure>
-                                        <div class="img"
-                                            style="background-image:url({{ asset('equipo/' . $item->imagen) }});">
-                                    </figure>
-                                    <div class="card--social"></div>
-                                    <div class="card-title">
+                                <div class="target-liner back">
+                                    <div class="target-title">
                                         <h3 class="name">{{ $item->nombres }}</h3>
                                         <p class="post">{{ $item->cargo }}</p>
                                     </div>
-                                    <div class="card-desc">
+                                    <div class="target-desc">
                                         <hr />
                                         <p>{{ $item->correo }}</p>
                                     </div>
-                                    <div class="card-btn">
+                                    <div class="target-btn">
                                         <div class="botones">
                                             <div class="fullprof">
                                                 <a class="editar-equipo"
@@ -144,8 +137,8 @@
                                     </div>
                                 </div>
                                 <!-- fin back -->
-                                @include('admin.equipo.modal')
                             </div>
+                            @include('admin.equipo.modal')
                         </div>
                     @endforeach
                 </div>

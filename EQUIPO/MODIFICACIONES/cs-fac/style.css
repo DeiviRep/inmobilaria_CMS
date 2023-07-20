@@ -1,0 +1,643 @@
+.container_equipo .card_header {
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgba(130, 130, 130, 0.3);
+  color: #ffffff;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position-y: -80px !important;
+  background-image: url(/img-fc/Team_work_Monochromatic.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 130%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.container_equipo {
+  float: right;
+  top: 0;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100vh !important;
+  background: linear-gradient(
+    315deg,
+    rgba(32, 31, 47, 0.9612219887955182) 0%,
+    rgba(24, 24, 56, 1) 28%,
+    rgba(17, 40, 55, 1) 68%,
+    rgba(10, 38, 70, 1) 100%
+  );
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: -10;
+  padding: 10px 20px;
+  padding-bottom: 200px !important;
+}
+.container_equipo .card_header .btn {
+  display: inline;
+  color: #fff;
+  border: 3px solid #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: transparent;
+  width: fit-content;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+  /* box-shadow: 0px 2px 5px 1px rgb(100 100 100 / 80%); */
+}
+.container_equipo .card_header .btn.eliminar {
+  margin-left: 20px;
+}
+.container_equipo .card_header .btn:hover {
+  color: black;
+  border: 3px solid black;
+  background-color: #fff;
+}
+.card_header .title {
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  margin: 0px;
+  letter-spacing: 3px;
+}
+.card_header .details {
+  font-family: "Muli", sans-serif;
+  display: flex;
+   flex-direction: column; 
+  justify-content: start;
+  padding: 0px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  max-width: 450px;
+  margin: 20px 0px 43px 0px;
+}
+
+.card-body {
+  padding: 0;
+  padding-top: 1.25rem;
+}
+
+.card-body .card-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -27px;
+  
+}
+
+.card-body .card-columnas .card-contenido {
+  width: 250px;
+  margin: 29px;
+}
+
+.our-team {
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+.our-team:before {
+  content: "";
+  position: absolute;
+  border: 4px solid white !important;
+  bottom: -7px;
+  top: -7px;
+  left: -7px;
+  right: -7px;
+  opacity: 0;
+  border-radius: 5px;
+  transform: scale(1.03);
+  z-index: -1;
+  transition: 0.6s ease 0s;
+}
+.our-team:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.our-team .team-img {
+  position: relative;
+  height: 240px;
+}
+.our-team .team-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.6s ease 0s;
+}
+.our-team:hover .team-img:before {
+  opacity: 1;
+}
+.our-team .team-img .img {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.our-team:hover .team-img .img-blur {
+  backdrop-filter: blur(2px);
+}
+.team-img .img .eliminar {
+  height: 40px;
+  padding: 5px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 10px;
+  width: 40px;
+  background-color: rgba(130, 130, 130, 0.3);
+  color: #fff;
+  font-size: 21px;
+  border: 3px solid #fff;
+  text-decoration: none;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-150px);
+}
+.team-img .img .eliminar:hover {
+  color: red;
+  border: 3px solid red;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateX(0);
+}
+.team-img .img .editar-equipo {
+  height: auto;
+  border: 3px solid #fff;
+  background-color: rgba(130, 130, 130, 0.3);
+  color: #fff;
+  font-size: 21px;
+  padding: 0 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+  z-index: 1;
+  transform: translateX(150px);
+}
+.team-img .img .editar-equipo:hover {
+  color: #20a8d8;
+  border: 3px solid #20a8d8;
+  background-color: #fff;
+  text-decoration: none;
+}
+.our-team:hover .team-img .img .eliminar {
+  transform: translateX(0);
+}
+.our-team:hover .team-img .img .editar-equipo {
+  transform: translateX(0);
+}
+.our-team .team-content {
+  padding: 2px 0;
+  position: relative;
+  top: 0;
+  transition: 0.6s ease 0s;
+}
+.our-team:hover .team-content {
+  top: -50%;
+}
+.our-team .team-content .name {
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 7px;
+  /* text-transform: uppercase; */
+  transition: 0.6s ease 0s;
+}
+.our-team:hover .team-content .name {
+  color: #fff;
+}
+.our-team .team-content .post {
+  color: #707070;
+  font-size: 11px;
+  font-weight: 500;
+  display: block;
+  text-transform: capitalize;
+  transition: 0.6s ease 0s;
+}
+.our-team:hover .team-content .post {
+  color: #ffb619;
+}
+.our-team .social {
+  bottom: 0;
+  font-size: 0;
+  left: 0;
+  margin: 0 0 30px;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transform: scale(0);
+  transition: 0.6s ease 0s;
+}
+.our-team:hover .social {
+  opacity: 1;
+  transform: scale(1);
+}
+.our-team .social li {
+  display: inline-block;
+}
+.our-team .social li a {
+  display: block;
+  color: #333;
+  font-size: 18px;
+  padding: 0 15px;
+  position: relative;
+  transition: 0.3s ease 0s;
+}
+.our-team .social li a:hover {
+  color: #f6511d;
+}
+.our-team .social li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #333;
+}
+.our-team .social li:last-child a:after {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .our-team {
+    margin-bottom: 30px !important;
+  }
+}
+@media (min-width:768px) and (max-width:1023px){
+  #app-2{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+@media (max-width: 768px) {
+  .container_equipo .card_header {
+    background-size: 75%;
+  }
+  .card_header .title {
+    font-size: 40px;
+  }
+  .card_header .details {
+    font-size: 15px;
+  }
+  .card-columnas {
+    justify-content: center;
+  }
+}
+.card-contenido {
+  max-width: 20em;
+  margin: 3em auto;
+}
+.card-equipo {
+  background-color: rgba(130, 130, 130, 0.3);
+  border-radius: 5px;
+  transition: all 0.35s ease;
+  width: 20rem;
+}
+.card-equipo:hover {
+  box-shadow: rgba(10, 145, 145, 0.1) 0 0 5em;
+}
+.card-equipo:hover figure {
+  transform: scale(0.6) translateY(-1.4em);
+}
+.card-equipo:hover .card-title {
+  transform: translateY(-5em);
+}
+.card-equipo:hover .card-desc {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.4s;
+}
+.card-equipo:hover .card-desc p {
+  opacity: 1;
+}
+.card-equipo:hover .card-desc hr {
+  transition-delay: 0.1s;
+  transform: scale(1, 1);
+}
+.card-equipo:hover .card-social li {
+  opacity: 1;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  transform: translate(0, 0) rotate(0deg);
+}
+.card-equipo:hover .card-btn a {
+  background: #fbfbfb;
+  border-color: rgba(238, 238, 238, 0.5);
+}
+.card-equipo:hover .card-btn .moreinfo {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.card-equipo:hover .card-btn .fullprof {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card-equipo figure {
+  position: relative;
+  z-index: 299;
+  width: 10em;
+  height: 10em;
+  margin: 0 auto 1em;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 4px;
+  transform-origin: center top;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card-equipo figure .img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  height: 100%;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-liner {
+  position: relative;
+  overflow: hidden;
+  padding: 2em;
+}
+
+.card-title {
+  text-align: center;
+  line-height: 1;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card-title h3 {
+  color: #ffff;
+  margin: 0 0 0.4em;
+  font-size: 1.4em;
+}
+.card-title p {
+  margin: 0 0 5em;
+  color: #a5a5a5;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  text-align-last: center;
+}
+
+
+.card-desc {
+  position: absolute;
+  top: 59%;
+  left: 9%;
+  width: 82%;
+  text-align: center;
+  padding-bottom: 0.8em;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(3em);
+  transition: all 0.02s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card-desc p {
+  margin: 0 0 0.5em;
+  font-weight: 300;
+  opacity: 0;
+  transition: all 0.55s ease 0.1s;
+  text-align-last: center;
+  text-transform: uppercase;
+    font-size: 0.8em;
+}
+.card-desc p span {
+  text-decoration: line-through;
+}
+.card-desc hr {
+  border: none;
+  width: 3em;
+  margin: 0 auto 1.75em;
+  height: 3px;
+  background: #ffff;
+  transform: scale(0, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0.05s;
+}
+
+.card-btn {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.card-btn .botones {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  line-height: 1;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  font-size: 1em;
+  color: #a5a5a5;
+  /* padding: 1.4em 2em; */
+  border-top: 1px solid rgba(238, 238, 238, 0.5);
+  letter-spacing: 0.5px;
+  transition: all 0.4s ease;
+}
+.card-btn .botones .fullprof {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  color: #0a9191;
+  transform: translateY(50px);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-btn .botones .fullprof .editar-equipo {
+  display: inline;
+  color: rgb(245, 231, 231);
+  border: solid #000000;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: black;
+  width: 75%;
+  margin: 10px;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+.card-btn .botones .fullprof .editar-equipo:hover {
+  color: rgb(255, 250, 250);
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(255, 250, 250);
+  border-radius: 1rem;
+}
+.card-btn .botones .fullprof .eliminar {
+  display: inline;
+  color: rgb(0, 0, 0);
+  border: 3px solid #fffcfc;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: rgb(255, 255, 255);
+  width: 75%;
+  margin: 10px;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+.card-btn .botones .fullprof .eliminar:hover {
+  color: rgb(251, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 0, 0);
+  border-radius: 1rem;
+}
+
+.card-btn .botones .moreinfo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.4em;
+  opacity: 1;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  justify-content: center;
+  align-items: center;
+}
+.card-btn .botones .moreinfo i {
+  margin-right: 5px;
+}
+
+.card-social {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  width: 100%;
+}
+.card-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 2em;
+  position: relative;
+}
+.card-social li {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 0.02s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card-social li.twitter {
+  left: 72%;
+  transform: translate(-200%, 1em) scale(0.7);
+}
+.card-social li.linkedin {
+  right: 72%;
+  transform: translate(200%, 1em) scale(0.7);
+}
+.card-social .botones {
+  line-height: 2.4;
+  display: block;
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 50%;
+  border: 1px solid rgba(238, 238, 238, 0.5);
+  background: #fbfbfb;
+  color: #0a9191;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.card-social a:hover {
+  background: #eee;
+}
+
+.cred {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid rgba(238, 238, 238, 0.5);
+  text-decoration: none;
+}
+.cred .botones {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 300;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+.cred .botones i {
+  margin-left: 10px;
+}
+/*  Estilos Baner de Enlace */
+.cont-enlace {
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgba(130, 130, 130, 0.3);
+  color: #ffffff;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position-y: -80px !important;
+  background-image: url(/img-fc/Team_work_Monochromatic.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 130%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.cont-enlace .title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.cont-enlace .details {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

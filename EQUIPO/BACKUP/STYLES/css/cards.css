@@ -1,0 +1,636 @@
+
+
+
+
+.container_nine
+{
+    width: 89.5%;
+    top: 100px;
+    border-radius: 20px;
+    background-color: #fff !important;
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.title_nine
+{
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    line-height: 2em;
+    background-color: #000;
+    border-radius: 15px;
+    margin: 0 50px;
+    position: relative;
+    top: -1em;         
+}
+
+ .btn_nine
+{
+    margin: 60px 20px;
+}
+
+.cards_nine
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    top: -70px;
+}
+
+.card_nine
+{
+    width: 500px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: .6s;
+    cursor: pointer;
+}
+
+
+.cardnine_img
+{
+    width: 500px;
+    height: 310px;
+}
+
+.cardnine_img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.card {
+    position: relative;
+    border-radius: 10px !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 30px 2px black;
+    overflow: hidden;
+}
+
+
+@media(max-width:1840px)
+{
+    .card_nine
+    {
+        width: 400px;
+        margin: 20px;
+    }
+
+    .cardnine_img 
+    {
+        width: 400px;
+        height: 250px;
+    }
+
+    .connections 
+    {
+        bottom: 60px !important;
+    }
+
+    .card:hover .info 
+    {
+        transform: translateY(-10px);
+    }
+    
+    .info 
+    {
+        padding-top: 10px;
+    }
+
+    
+}
+
+@media(max-width:1540px)
+{
+    .card_nine
+    {
+        width: 320px;
+        margin: 20px;
+    }
+
+    .cardnine_img 
+    {
+        width: 320px;
+        height: 205px;
+    }    
+}
+
+@media(max-width:1290px)
+{
+    .card_nine
+    {
+        width: 240px;
+        margin: 20px;
+    }
+
+    .cardnine_img 
+    {
+        width: 240px;
+        height: 160px;
+    }    
+
+    .connection 
+    {
+        height: 12px !important;
+        width: 12px !important;
+    }
+
+    .card:hover .info 
+    {
+        transform: translateY(0px) !important;
+    }
+
+    .name 
+    {
+        font-size: .8em;
+        padding-top: 0;
+    }
+
+    .job {
+        margin-top: 5px !important;
+        font-size: 0.8em;
+    }
+
+    .info 
+    {
+        padding-top: 10px !important;
+    }
+
+    .connections {
+        bottom: 50px !important;
+    }
+
+}
+
+@media(max-width:1016px)
+{
+    .container_nine 
+    {
+        margin: 150px 50px 100px 50px;
+    } 
+}
+
+@media(max-width:950px)
+{
+    .card_nine
+    {
+        width: 170px;
+        margin: 15px;
+    }
+
+    .cardnine_img 
+    {
+        width: 170px;
+        height: 115px;
+    }    
+}
+
+@media(max-width:715px)
+{
+    .cards_nine
+    {
+        flex-direction: column;
+    }
+
+
+    .card_nine
+    {
+        width: 450px;
+        margin: 15px;
+    }
+
+    .cardnine_img 
+    {
+        width: 450px;
+        height: 290px;
+    }    
+}
+
+@media(max-width:610px)
+{
+    .card_nine
+    {
+        width: 350px;
+        margin: 15px;
+    }
+
+    .cardnine_img 
+    {
+        width: 350px;
+        height: 230px;
+    }    
+}
+
+@media(max-width:490px)
+{
+    .card_nine
+    {
+        width: 250px;
+        margin: 15px;
+    }
+
+    .cardnine_img 
+    {
+        width: 250px;
+        height: 180px;
+    }    
+}
+
+@media(max-width:400px)
+{
+    .container_nine 
+    {
+        margin: 150px 20px 100px 20px;
+    }
+}
+
+@media(max-width:340px)
+{
+    .card_nine
+    {
+        width: 170px;
+        margin: 15px;
+    }
+
+    .cardnine_img 
+    {
+        width: 170px;
+        height: 100px;
+    }    
+}
+
+
+.card_nine span
+{
+    display: none;
+}
+
+.btnnine_links i
+{
+    color: #000;
+    font-size: 1em;
+    border: solid #a4a4a9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btnnine_links a
+{
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.nine_botonera
+{
+    justify-content: space-between;
+    display: flex;
+}
+
+.btnnine_links i.active_nine
+{
+    border: solid blue;
+}
+
+.expander .card_nine
+{
+    border: solid none; 
+}
+
+.expander1 .card_nine
+{
+    border: solid red; 
+}
+
+
+
+.card-blur {
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 1px);
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.card:hover .card-blur {
+    opacity: 0.6;
+}
+
+.footer {
+    z-index: 1;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+}
+
+.connections {
+    height: 80px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+}
+
+.connection {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 25px;
+    transform: translateY(200px);
+    
+    transition: transform 1s cubic-bezier(.46, 1.48, .18, .81);
+}
+
+.card:hover .connection {
+    transform: translateY(0px);
+}
+
+.connection.facebook {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.connection.twitter {
+    transition-delay: 0.02s;
+}
+
+.connection.behance {
+    transition-delay: 0.04s;
+}
+
+.connection.facebook .icon {
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    margin-left: 4px;
+    background-position: center;
+    background-size: cover;
+}
+
+.connection.twitter .icon {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.connection.behance .icon {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.info {
+	font-family: Inconsolata;
+    padding-left: 20px;
+    padding-top: 20px;
+    transform: translateY(250px);
+    background-color: #fff;
+    height: 300px;
+    transition: transform 1s cubic-bezier(.31,1.21,.64,1.02);
+}
+
+.card:hover .info {
+    transform: translateY(-30px);
+}
+
+.name {
+    font-weight: bolder;
+    padding-top: 5px;
+    color: #000;
+}
+
+.job {
+    margin-top: 10px;
+    color: #000;
+}
+
+
+.container_nine#blur.activ
+{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup
+{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: .5s;
+}
+
+#popup.activ
+{
+    visibility: visible;
+    opacity: 1;
+    transform: .5s;
+    top: 52%;
+}
+
+.info a
+{
+    padding: 10px 20px;
+    border-radius: 7px;
+    top: 20px;
+    text-decoration: none;
+    background-color: aqua;
+    position: relative;
+}
+
+.info button
+{
+    padding: 10px 20px !important;
+    border-radius: 7px !important;
+    top: 20px !important;
+    text-decoration: none !important;
+    background-color: aqua !important;
+    position: relative !important;
+    position: absolute !important;
+    margin-top: 3px !important;
+    margin-left: 120px !important;
+    cursor: pointer;
+}
+
+.npanels
+{
+    display: flex;
+}
+
+.left_npanel
+{
+    width: 50%;
+    margin-right: 15px;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.npanel_img img
+{
+    width: 100%;
+    border-radius: 20px 0 0px 20px;
+    height: 518px;
+}
+
+
+.right_npanel a,
+#popup a
+{
+    padding: 5px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background: #000;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 0.05em;
+    width: 300px;
+    margin-left: 35px;
+    margin: auto;
+}
+
+.right_npanel a
+{
+    margin-top: 20px !important;
+}
+
+#popup .popup_btn
+{
+    margin-top: 20px !important;
+}
+
+.right_npanel
+{
+    width: 50%;
+    padding:  10px 30px 30px 30px;
+}
+
+.right_npanel .right_npanlsect
+{
+    border: solid #000;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.right_npanel .right_npanlsect p
+{
+    font-size: 1.1em;
+    font-weight: 550;
+    color: #000;
+}
+
+.right_npanel .right_npanlsect input
+{   border: none;
+    border-bottom: 2px solid #000;
+    display: flex;
+    height: 1.5em;
+}
+
+.cuadrito
+{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    height: 50px;
+    position: absolute;
+    background: #000;
+    top: 170px;
+    right: 91px;
+    border-radius: 10px;
+}
+
+.app-footer
+{
+    display: none !important;
+}
+
+/* Main y Demas */
+@media (min-width: 992px)
+{
+  html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .main, :not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main, :not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer 
+  {
+    margin-left: 0px;
+    position: relative;
+    left: 0px;
+  }
+}
+
+
+.button_nine,
+.editar
+{
+    color: #fff !important;
+    background: #000;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+} 
+
+.emergente p
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.em
+{
+    display: flex;
+    justify-content: space-around;
+    transition: 2s;
+}
+
+.em a,
+.em button
+{
+    margin: 0 20px 10px !important;
+    background: #000 !important;
+    width: 140px !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+}
+
+#cardmostrarOcultar
+{
+    display: none;
+}
