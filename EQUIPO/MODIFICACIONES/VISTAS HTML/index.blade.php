@@ -73,8 +73,8 @@
                             <ion-icon class="icon" name="checkmark-outline"></ion-icon>
                         </div>
                         <!-- <div class="info-alert">
-                                                                      <div><span class="title">Información actualizada</span>
-                                                                            <span class="message">Los cambios se han publicado con éxito</span> -->
+                                                                          <div><span class="title">Información actualizada</span>
+                                                                                <span class="message">Los cambios se han publicado con éxito</span> -->
                         <div class="info-alert">
                             <div class="mensaje_alert" style="display:none;">
                                 {{ Session::get('succes') }}
@@ -184,6 +184,9 @@
         </div>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
         <script src="{{ asset('EstilosCMS/slider/js/main.js') }}"></script>
+        {{-- INICIO TARGETS DavidPV --}}
+        <script src="{{ asset('EstilosCMS/equipo/js/target.js') }}"></script>
+        {{-- FIN TARGETS --}}
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
         <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
     @endsection
